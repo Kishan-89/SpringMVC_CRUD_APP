@@ -82,15 +82,15 @@ public class HomeController {
 		return rv;
 	}
 
-	/*
-	 * @RequestMapping("/update/{bookid}") public String
-	 * updateBook(@PathVariable("bookid") int bookid, HttpServletRequest req, Model
-	 * m) {
-	 * 
-	 * Book book = bookService.getBook(bookid); m.addAttribute("book", book);
-	 * 
-	 * return "editForm"; }
-	 */
+	
+	  @RequestMapping("/update/{bookid}") public String
+	  updateBook(@PathVariable("bookid") int bookid, HttpServletRequest req, Model
+	  m) {
+	  
+	  Book book = bookService.getBook(bookid); m.addAttribute("book", book);
+	  
+	  return "editForm"; }
+	 
 	
 	  
 	 
